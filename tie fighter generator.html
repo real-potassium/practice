@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tie fighter factory</title>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script>
+            $(window).ready(function() {
+                $("#factory").click(function() {
+                    $("#arsenal").append(" |-o-| ");
+                });
+            });
+        </script>
+
+    </head>
+    <body>
+        <style>
+            #factory {width:300px; height:30px; position:fixed; left:600px;}
+            #arsenal {width:1515px; border:1px solid grey;}
+        </style>
+        <button id="factory">Click to create a tie fighter!</button>
+        <br>
+        <br>
+        <div id="arsenal">|-o-|</div>
+    </body>
+</html>
